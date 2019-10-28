@@ -1,3 +1,3 @@
 /home/code/WS/CppCrashCourse/build/CMakeFiles/rebuild_cache.dir
-/home/code/WS/CppCrashCourse/build/CMakeFiles/chapter1.dir
+/home/code/WS/CppCrashCourse/build/CMakeFiles/chapter2.dir
 /home/code/WS/CppCrashCourse/build/CMakeFiles/edit_cache.dir
