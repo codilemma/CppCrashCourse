@@ -68,6 +68,13 @@ enum class Race {
   Aidan
 };
 
+enum class Operation {
+  Add,
+  Subtract,
+  Multiply,
+  Divide
+};
+
 // Plain-old-data (POD) Class
 struct Book {
   char name[256];
@@ -105,7 +112,45 @@ class ClockOfTheLongNow{
     }
   }
   // Destructor
-  
+  ~ClockOfTheLongNow(){
+    printf("This is the End of Time!");
+  }
+};
+
+class Calculator{
+  private:
+    int a;
+    int b;
+    int result;
+    Operation op;
+  public:
+    int calculate(int a, int b){
+      switch (op){
+        case Operation::Add:{
+          result = a + b;
+          return result;
+        } break;
+        case Operation::Divide:{
+          result = a / b;
+          return result;
+        } break;
+        case Operation::Multiply:{
+          result = a * b;
+          return result;
+        } break;
+        case Operation::Subtract:{
+          result = a - b;
+          return result;
+        } break; 
+        default: {
+          printf("Invalid Operation - Try Again!");
+        }
+      }
+    }
+  // Class Constructor
+  Calculator(Operation op_set){
+    op = op_set;
+  }
 };
 
 // Class with 4 constructors
@@ -322,5 +367,15 @@ int main(){
   int narrowed_result(aa/bb); // Pottentially nasty anrrowing conversion
   int result{ aa/bb };        // Compiler generates warning
 
-
+  // Create and test calculator class.
+  int num1 = 5;
+  int num2 = 5;
+  int calc_result = 0;
+  Operation op;
+  Calculator calc{ Operation::Add };
+  calc_result = calc.calculate(num1, num2);
+  printf("5 + 5 = %d\n", calc_result);
+  Calculator calc2{ Operation::Divide };
+  calc_result = calc2.calculate(num1, num2);
+  printf("5 / 5 = %d\n", calc_result);
 }
