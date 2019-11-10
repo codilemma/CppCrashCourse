@@ -2,10 +2,10 @@
 cmake_minimum_required(VERSION 3.5.1)
 
 # project name
-project(chapter2-cmake)
+project(chapter3-cmake)
 
 # creates the variable EXEC and sets it to hello
-set(EXEC chapter2)
+set(EXEC chapter3)
 
 # set the C++17 standard
 #set(CMAKE_CXX_STANDARD 17)
@@ -14,7 +14,7 @@ set(EXEC chapter2)
 include_directories(includes)
 
 #Manually add source files   #Multiple Sources set(SOURCES src/source1.c src/source2.c src/source3.c)
-set(SOURCES src/chapter2.cpp)
+set(SOURCES src/chapter3.cpp)
 
 # puts all .cpp files inside src to the SOURCES variable
 #file(GLOB SOURCES src/*.cpp)

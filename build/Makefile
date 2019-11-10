@@ -111,44 +111,44 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named chapter2
+# Target rules for targets named chapter3
 
 # Build rule for target.
-chapter2: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 chapter2
-.PHONY : chapter2
+chapter3: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 chapter3
+.PHONY : chapter3
 
 # fast build rule for target.
-chapter2/fast:
-	$(MAKE) -f CMakeFiles/chapter2.dir/build.make CMakeFiles/chapter2.dir/build
-.PHONY : chapter2/fast
+chapter3/fast:
+	$(MAKE) -f CMakeFiles/chapter3.dir/build.make CMakeFiles/chapter3.dir/build
+.PHONY : chapter3/fast
 
-src/chapter2.o: src/chapter2.cpp.o
+src/chapter3.o: src/chapter3.cpp.o
 
-.PHONY : src/chapter2.o
+.PHONY : src/chapter3.o
 
 # target to build an object file
-src/chapter2.cpp.o:
-	$(MAKE) -f CMakeFiles/chapter2.dir/build.make CMakeFiles/chapter2.dir/src/chapter2.cpp.o
-.PHONY : src/chapter2.cpp.o
+src/chapter3.cpp.o:
+	$(MAKE) -f CMakeFiles/chapter3.dir/build.make CMakeFiles/chapter3.dir/src/chapter3.cpp.o
+.PHONY : src/chapter3.cpp.o
 
-src/chapter2.i: src/chapter2.cpp.i
+src/chapter3.i: src/chapter3.cpp.i
 
-.PHONY : src/chapter2.i
+.PHONY : src/chapter3.i
 
 # target to preprocess a source file
-src/chapter2.cpp.i:
-	$(MAKE) -f CMakeFiles/chapter2.dir/build.make CMakeFiles/chapter2.dir/src/chapter2.cpp.i
-.PHONY : src/chapter2.cpp.i
+src/chapter3.cpp.i:
+	$(MAKE) -f CMakeFiles/chapter3.dir/build.make CMakeFiles/chapter3.dir/src/chapter3.cpp.i
+.PHONY : src/chapter3.cpp.i
 
-src/chapter2.s: src/chapter2.cpp.s
+src/chapter3.s: src/chapter3.cpp.s
 
-.PHONY : src/chapter2.s
+.PHONY : src/chapter3.s
 
 # target to generate assembly for a file
-src/chapter2.cpp.s:
-	$(MAKE) -f CMakeFiles/chapter2.dir/build.make CMakeFiles/chapter2.dir/src/chapter2.cpp.s
-.PHONY : src/chapter2.cpp.s
+src/chapter3.cpp.s:
+	$(MAKE) -f CMakeFiles/chapter3.dir/build.make CMakeFiles/chapter3.dir/src/chapter3.cpp.s
+.PHONY : src/chapter3.cpp.s
 
 # Help Target
 help:
@@ -157,11 +157,11 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
-	@echo "... chapter2"
+	@echo "... chapter3"
 	@echo "... edit_cache"
-	@echo "... src/chapter2.o"
-	@echo "... src/chapter2.i"
-	@echo "... src/chapter2.s"
+	@echo "... src/chapter3.o"
+	@echo "... src/chapter3.i"
+	@echo "... src/chapter3.s"
 .PHONY : help
 
 

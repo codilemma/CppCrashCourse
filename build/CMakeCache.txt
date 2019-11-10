@@ -130,7 +130,7 @@ CMAKE_OBJCOPY:FILEPATH=/usr/bin/objcopy
 CMAKE_OBJDUMP:FILEPATH=/usr/bin/objdump
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=chapter2-cmake
+CMAKE_PROJECT_NAME:STATIC=chapter3-cmake
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=/usr/bin/ranlib
@@ -198,6 +198,12 @@ chapter2-cmake_BINARY_DIR:STATIC=/home/code/WS/CppCrashCourse/build
 
 //Value Computed by CMake
 chapter2-cmake_SOURCE_DIR:STATIC=/home/code/WS/CppCrashCourse
+
+//Value Computed by CMake
+chapter3-cmake_BINARY_DIR:STATIC=/home/code/WS/CppCrashCourse/build
+
+//Value Computed by CMake
+chapter3-cmake_SOURCE_DIR:STATIC=/home/code/WS/CppCrashCourse
 
 
 ########################
